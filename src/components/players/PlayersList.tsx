@@ -60,7 +60,7 @@ const PlayersList: React.FC = () => {
             title="No players found"
             description={searchQuery ? "Try a different search term" : "Add your first opponent to get started"}
             action={
-              <button className="btn btn-primary\" onClick={() => setShowForm(true)}>
+              <button className="btn btn-primary" onClick={() => setShowForm(true)}>
                 Add a player
               </button>
             }
