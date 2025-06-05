@@ -21,7 +21,7 @@ function App() {
           <Route path="players" element={<Players />} />
           <Route path="training" element={<Training />} />
           <Route path="statistics" element={<Statistics />} />
-          <Route path="*" element={<Navigate to="/\" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
     </Router>
