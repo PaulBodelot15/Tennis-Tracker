@@ -19,7 +19,7 @@ const saveTodos = (todos: Todo[]) => {
   localStorage.setItem('tennis-tracker-todos', JSON.stringify(todos));
 };
 
-export const useTodoStore = create<TodoState>((set, get) => ({
+export const useTodoStore = create<TodoState>((set) => ({
   todos: loadTodos(),
   addTodo: (todo) => {
     const newTodo: Todo = {
