@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, Filter, CalendarRange } from 'lucide-react';
+import { Plus, CalendarRange } from 'lucide-react';
 import { useTrainingStore } from '../../store/trainingStore';
 import TrainingCard from './TrainingCard';
 import TrainingForm from './TrainingForm';
@@ -97,7 +97,7 @@ const TrainingList: React.FC = () => {
               ? "Try changing your filters" 
               : "Add your first training session to get started"}
             action={
-              <button className="btn btn-primary\" onClick={() => setShowForm(true)}>
+              <button className="btn btn-primary" onClick={() => setShowForm(true)}>
                 Add a training session
               </button>
             }
