@@ -48,3 +48,4 @@ export const useTrainingStore = create<TrainingState>((set) => ({
     });
   },
 }));
+
