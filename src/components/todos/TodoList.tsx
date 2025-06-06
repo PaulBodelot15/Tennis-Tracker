@@ -110,11 +110,11 @@ const TodoList: React.FC = () => {
             icon={CheckSquare}
             title="No tasks found"
             description="Add your first training task to get started"
-            action={
-              <button className="btn btn-primary\" onClick={() => setShowForm(true)}>
-                Add a task
-              </button>
-            }
+              action={
+                <button className="btn btn-primary" onClick={() => setShowForm(true)}>
+                  Add a task
+                </button>
+              }
           />
         )}
       </div>
