@@ -111,7 +111,7 @@ const TodoList: React.FC = () => {
             title="No tasks found"
             description="Add your first training task to get started"
             action={
-              <button className="btn btn-primary\" onClick={() => setShowForm(true)}>
+              <button className="btn btn-primary" onClick={() => setShowForm(true)}>
                 Add a task
               </button>
             }
