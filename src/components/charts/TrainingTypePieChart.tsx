@@ -20,8 +20,13 @@ const TrainingTypePieChart: React.FC = () => {
     }));
   }, [trainings]);
   
+  interface CustomTooltipProps {
+    active?: boolean;
+    payload?: Array<{ name: string; value: number; color: string }>;
+  }
+
   // Custom tooltip
-  const CustomTooltip = ({ active, payload }: any) => {
+  const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
     if (active && payload && payload.length) {
       return (
         <div className="bg-white dark:bg-gray-800 p-3 border border-gray-200 dark:border-gray-700 rounded shadow-md">
